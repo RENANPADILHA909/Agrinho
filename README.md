@@ -20,7 +20,6 @@ O projeto apresenta de forma clara e profissional os conceitos, benefícios, ten
 - **Scroll suave** entre seções
 - **Formulário de Newsletter** com validação completa
 - **Tabela interativa** de Economia Circular
-- **Seções completas** baseadas no PDF fornecido
 
 ---
 
