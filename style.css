@@ -216,7 +216,10 @@ input, textarea {
     padding: var(--spacing-md) var(--spacing-xl);
     border-radius: var(--radius-md);
     transition: all var(--transition-base);
-    white-space: nowrap;
+    white-space: normal;
+    word-break: break-word;
+    max-width: 100%;
+    text-align: center;
 }
 
 .btn-primary {
@@ -490,9 +493,9 @@ input, textarea {
 
 .hero-tag {
     display: inline-block;
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     font-weight: 600;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
     color: var(--gold-light);
     background: rgba(255, 255, 255, 0.15);
@@ -500,6 +503,8 @@ input, textarea {
     border-radius: var(--radius-full);
     margin-bottom: var(--spacing-lg);
     backdrop-filter: blur(4px);
+    max-width: 100%;
+    word-break: break-word;
 }
 
 .hero-title {
@@ -552,7 +557,7 @@ input, textarea {
 
 .hero-stats {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
     gap: var(--spacing-md);
     width: 100%;
     max-width: 600px;
@@ -576,10 +581,11 @@ input, textarea {
 }
 
 .stat-label {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     color: rgba(255, 255, 255, 0.8);
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.02em;
+    line-height: 1.4;
 }
 
 /* ============================================
@@ -1446,7 +1452,11 @@ input, textarea {
     .circular-infographic {
         grid-template-columns: repeat(3, 1fr);
     }
-    
+
+    .hero-stats {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
     .benefits-grid {
         grid-template-columns: repeat(2, 1fr);
     }
