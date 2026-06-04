@@ -107,6 +107,7 @@
 html {
     scroll-behavior: smooth;
     font-size: 16px;
+    overflow-x: hidden;
 }
 
 body {
@@ -552,7 +553,8 @@ input, textarea {
 .hero-stats {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: var(--spacing-lg);
+    gap: var(--spacing-md);
+    width: 100%;
     max-width: 600px;
     margin: 0 auto;
     padding-top: var(--spacing-xl);
@@ -566,10 +568,11 @@ input, textarea {
 .stat-number {
     display: block;
     font-family: var(--font-heading);
-    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-size: clamp(1rem, 3.5vw, 2rem);
     font-weight: 700;
     color: var(--gold-light);
     margin-bottom: var(--spacing-xs);
+    word-break: break-word;
 }
 
 .stat-label {
@@ -729,7 +732,7 @@ input, textarea {
 
 .circular-infographic {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
     gap: var(--spacing-lg);
 }
 
@@ -1438,6 +1441,10 @@ input, textarea {
     .hero-cta {
         flex-direction: row;
         justify-content: center;
+    }
+    
+    .circular-infographic {
+        grid-template-columns: repeat(3, 1fr);
     }
     
     .benefits-grid {
